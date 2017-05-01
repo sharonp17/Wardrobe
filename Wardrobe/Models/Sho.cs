@@ -11,6 +11,7 @@ namespace Wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class Sho
     {
@@ -21,13 +22,20 @@ namespace Wardrobe.Models
         }
     
         public int ShoeID { get; set; }
+        [DisplayName("Brand")]
         public string ShoeName { get; set; }
+        [DisplayName("Image")]
         public string ShoePhoto { get; set; }
+        [DisplayName("Item")]
         public string ShoeType { get; set; }
+        [DisplayName("Color")]
         public string ShoeColor { get; set; }
+        [DisplayName("Season")]
         public string ShoeSeason { get; set; }
+        [DisplayName("Occasion")]
         public string ShoeOccasion { get; set; }
-    
+        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Outfit> Outfits { get; set; }
     }

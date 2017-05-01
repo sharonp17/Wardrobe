@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Bottoms Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -39,8 +39,8 @@
         </td>
         
         <td>        
-           <img src="@Html.DisplayFor(modelItem => item.BottomPhoto)" />
-        </td>
+            <a href="@Url.Action("Details", new { id = item.BottomID })"><img src="@Html.DisplayFor(modelItem => item.BottomPhoto)" style="width: 150px; height: 150px;" /> </a>
+</td>
         <td>
             @Html.DisplayFor(modelItem => item.BottomType)
         </td>
@@ -54,8 +54,6 @@
             @Html.DisplayFor(modelItem => item.BottomOccasion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BottomID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BottomID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.BottomID })
         </td>
     </tr>

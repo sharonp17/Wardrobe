@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Shoe Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -38,8 +38,8 @@
             @Html.DisplayFor(modelItem => item.ShoeName)
         </td>
         <td>
-            <img src="@Html.DisplayFor(modelItem => item.ShoePhoto)"/>
-        </td>
+            <a href="@Url.Action("Details", new { id = item.ShoeID })">  <img src="@Html.DisplayFor(modelItem => item.ShoePhoto)" style="width: 150px; height: 150px;" /> </a>
+</td>
         <td>
             @Html.DisplayFor(modelItem => item.ShoeType)
         </td>
@@ -53,8 +53,7 @@
             @Html.DisplayFor(modelItem => item.ShoeOccasion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ShoeID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ShoeID }) |
+          
             @Html.ActionLink("Delete", "Delete", new { id=item.ShoeID })
         </td>
     </tr>

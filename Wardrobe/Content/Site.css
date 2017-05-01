@@ -1,24 +1,60 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+ 
+}
+.store {  background-image: url('Photos/store.jpg');
+           background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:#000000;
+    font-weight:300;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
-
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+section {
+  position: static;
+  background-color: transparent !important;
+}
+section .img {
+  position: fixed;
+  left:0; top:0;
+  background-size: cover;
+  min-height: 768px;
+  width: 100%;
+  opacity: 0.45;
+  z-index: -1;
+}
+
+section .container {
+  background-color: transparent;
+}
+.photos {
+    margin:auto;
+    height:auto;
+
+}
+.block{
+    width:500px;
+    height:400px;
+
+}
+.carousel-indicators li {
+    background: #ccc;
+}
+
+.carousel-indicators .active {
+    background: #666;
 }

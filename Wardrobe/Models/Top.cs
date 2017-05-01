@@ -11,6 +11,7 @@ namespace Wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class Top
     {
@@ -21,11 +22,17 @@ namespace Wardrobe.Models
         }
     
         public int TopID { get; set; }
+        [DisplayName("Brand")]
         public string TopName { get; set; }
+        [DisplayName("Image")]
         public string TopPhoto { get; set; }
+        [DisplayName("Item")]
         public string TopType { get; set; }
+        [DisplayName("Color")]
         public string TopColor { get; set; }
+        [DisplayName("Season")]
         public string TopSeason { get; set; }
+        [DisplayName("Occasion")]
         public string TopOccasion { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -11,6 +11,7 @@ namespace Wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class Accessory
     {
@@ -21,11 +22,17 @@ namespace Wardrobe.Models
         }
     
         public int AccessoryID { get; set; }
+        [DisplayName("Brand")]
         public string AccessoryName { get; set; }
+        [DisplayName("Image")]
         public string AccessoryPhoto { get; set; }
+        [DisplayName("Item")]
         public string AccessoryType { get; set; }
+        [DisplayName("Color")]
         public string AccessoryColor { get; set; }
+        [DisplayName("Season")]
         public string AccessorySeason { get; set; }
+        [DisplayName("Occasion")]
         public string AccessoryOccasion { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

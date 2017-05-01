@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Wardrobe.Models.Outfit>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "OUtfits";
 }
 
 <h2>Index</h2>
@@ -36,6 +36,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Sho.ShoeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Top.TopName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Top.TopName)
