@@ -41,9 +41,10 @@ section .img {
 section .container {
   background-color: transparent;
 }
-.photos {
+#photos {
     margin:auto;
-    height:auto;
+    height:300px;
+    
 
 }
 .block{

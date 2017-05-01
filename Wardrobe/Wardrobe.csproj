@@ -203,7 +203,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Default.css" />
     <Content Include="Content\Photos\Blouses.jpg" />
     <Content Include="Content\Photos\blueshoes.jpg" />
     <Content Include="Content\Photos\boots.jpg" />
